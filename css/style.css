@@ -1,0 +1,796 @@
+@font-face {
+font-family: "AngryBirds";
+src: url("../fonts/AngryBirds.ttf");
+font-weight: lighter;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.jpg);
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.j-c-c {
+    justify-content: center;-webkit-box-pack: justify;-webkit-justify-content: center;-ms-flex-pack: justify;
+}
+.a-i-c {
+    align-items: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;
+}
+.d-flex {
+    display: -webkit-flex;display: -webkit-box;display: -moz-flex;display: -moz-box;display: -ms-flexbox;display: -ms-flex;display: -o-flex;display: flex;
+}
+
+header .navbar {
+    background: #5d96d2;
+    border-bottom: 3px solid #fff;
+}
+header .navbar-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+header .navbar-nav a{
+    color: #fff !important;
+}
+
+header .form-control {
+    margin-left: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+header .btn {
+    margin-left: -10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+@media screen and (max-width: 992px) {
+    header .btn-search {
+        width: 100%;
+        margin-left: 10px;
+        border-radius: 6px;
+    }
+}
+header .top-content {
+    width: 1200px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+header .top-content .left {
+    width: 30%;
+    height: 200px;
+    text-align: left;
+    margin-top: 16px;
+}
+header .top-content .left .logo  {
+    text-align: center;
+    border: 1px solid #000;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    float: left;
+    background: #5d96d2;
+    border-color: #fff;
+    border-bottom: 3px solid #daf617;
+    border-left: 3px solid #053c98;
+    border-right: 3px solid #de0000;
+    font-family: "AngryBirds";
+    letter-spacing: 2px;
+}
+header .top-content .left .logo h5 {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #fff;
+}
+header .top-content .left img {
+    width: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    header .top-content {
+        width: 100%;
+    }
+    header .top-content .left  {
+        width: 100%;
+        text-align: center;
+    }
+    header .top-content .left {
+        width: 50%;
+}
+}
+header .top-content .right {
+    width: 70%;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+header .top-content .right .numb {
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: #282828;
+}
+header .top-content .right .numb strong {
+    font-size: 18px;
+}
+header .top-content .right .numb p {
+    margin-top: 10px;
+}
+header .top-content .right .contact button {
+    background: #daf617;
+    border-radius: 6px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    color: #053c98;
+}
+header .top-content .right .cart {
+    font-size: 20px;
+    margin-top: 20px;
+}
+header .top-content .right .cart:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+header .top-menu {
+    width: 1200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #5d96d2;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header .top-menu img {
+    width: 10px;
+}
+header .top-menu span {
+    color: #daf617;
+}
+header .top-menu a {
+    color: #fff;
+    margin-left: 15px;
+    font-family: "AngryBirds";
+    font-size: 18px;
+    border-bottom: 2px solid #daf617;
+}
+header .top-menu a:hover {
+    border-bottom: 3px dotted #053c98;
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+}
+header .top-slider {
+    width: 1200px;
+    border-bottom: 3px solid #fff;
+}
+header .top-slider .carousel-inner {
+    height: 600px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    header .top-slider {
+        width: 100%;
+    }
+     header .top-menu {
+         width: 100%;
+     }
+}
+.new .container .lazy, .special .container .lazy {
+        display: none;
+}
+.sl-block a {
+    color: #292929;
+}
+@media screen and (max-width: 1024px) {
+    .new {
+        margin-top: -100px;
+    }
+    .new .container .regular, .special .container .regular {
+        display: none;
+    }
+    .new .container .lazy, .special .container .lazy {
+        width: 90%;
+        display: block;
+    }
+}
+.produkt-options {
+    position: absolute;
+    height: 200px;
+    margin-top: 95px;
+    margin-left: 20px;
+    z-index: 100;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #daf617;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+.sorting {
+    margin-left: 80px;
+}
+
+content .adres-content {
+    background: #fff;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;padding-bottom: 50px;
+}
+content .paying-content {
+    font-size: 14px;
+    letter-spacing: 1.1px;
+}
+content .adres-content .title h1, content .adres-content .title h3 {
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding-left: 30px;padding-bottom: 20px;
+    margin-top: 50px;
+}
+content .adres-content .title p, content .adres-content .title strong {
+    margin-left: 30px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+content .adres-content .title span {
+    font-weight: bold;
+}
+content .adres-content .title table {
+    margin-left: 30px;
+    width: 50%;
+}
+content .adres-content .title table h7 {
+    border-bottom: 1px solid #000;
+}
+content .adres-content .title table td {
+    padding: 15px;
+    font-size: 15px;
+}
+content .adres-content .title .dropbtn {
+  background: none;
+  color: #2980B9;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #daf617;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 30px;
+}
+content .adres-content .title .dropbtn:hover, .dropbtn:focus {
+  background-color: none;
+  color: #292929;
+}
+content .adres-content .title .dropdown {
+  position: relative;
+  display: inline-block;
+}
+content .adres-content .title .dropdown-content {
+  display: none;
+  position: static;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 15px;
+  line-height: 30px;
+  font-size: 15px;
+  padding-left: 30px;padding-right: 30px;
+}
+content .adres-content .title .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+content .adres-content .inp-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+content .adres-content .inp-title span {
+    color: #de0000;
+}
+content .adres-content input, content .adres-content textarea {
+    margin-left: 30px;
+    border-radius: 6px;
+    padding-top: 5px;padding-bottom: 5px;
+    border: 3px solid #daf617;
+}
+content .adres-content .title button {
+    background: #3498DB;
+    color: #fff;
+    padding: 5px;
+    font-family: "AngryBirds";
+    padding-left: 40px;padding-right: 40px;
+    border-radius: 12px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.top-links {
+    margin-left: 30px;
+}
+content .adres-content .title button:hover {
+    border: 1px solid #000;
+    color: #282828;
+}
+content .adres-content .title .log-info {
+    font-size: 14px;
+    margin-left: 30px;
+}
+@media screen and (max-width: 992px) {
+    content .adres-content .title .log-info {
+        margin-left: 0;
+    }
+}
+content .adres-content .title .log-btn {
+    margin-top: 25px;
+}
+
+content .adres-content .title .dropdown-content a:hover {color: #292929; background: none !important;}
+content .adres-content .title .show {display:block;}
+
+@media screen and (max-width: 1200px) {
+    content .adres-content {
+        width: 100%;
+    }
+}
+/* content SLIDER-SPECIAL */
+content .produkts {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+content .produkts .produkt {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 250px;
+    height: 400px auto;
+    margin-left: 50px;margin-top: 80px;
+    text-align: center;
+    position: relative;
+}
+content .produkts .produkt img {
+    width: 100%;
+    margin: 0 auto;
+}
+content .produkts .produkt h3{
+    padding-left: 10px;padding-right: 10px;padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+content .produkts .produkt h4 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+content .produkts .produkt .produkt-cost {
+    font-family: "AngryBirds";
+    letter-spacing: 2px;
+}
+content .produkts .produkt .produkt-cost span {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+content .produkts .produkt button {
+    background: #5d96d2;
+    padding-left: 20px;padding-right: 20px;padding-top: 10px;padding-bottom: 10px;
+    color: #fff;
+    position:absolute;
+	bottom:0;
+    cursor: pointer;
+    width: 100%;
+    left: 0;
+    font-family: "AngryBirds";
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+content .produkts .produkt button:hover {
+    background: #daf617;
+    color: #282828;
+}
+content .produkts .produkt button img {
+    width: 20px;
+}
+
+
+section .title {
+    text-align: center;
+    color: #053c98;
+    font-size: 40px;
+    margin-top: 80px;
+    font-family: "AngryBirds";
+}
+section.new {
+    padding-top: 80px;
+}
+.slider .sl-block {
+    height: 400px;
+    background: #fff;
+    position: relative;
+}
+.sl-cart {
+    position:absolute;
+	bottom:0;
+    width: 100%;
+}
+.sl-cart button {
+    width: 100%;
+    padding: 20px;
+    background: #2980B9;
+    color: #fff;
+    font-family: "AngryBirds";
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.sl-cart button:hover {
+    background: #fff;
+    color: #292929;
+    border: 2px solid #292929;
+}
+
+/* footer */
+footer {
+    background: #5d96d2;
+    width: 100%;
+    margin-top: 150px;
+}
+footer form {
+    width: 1200px;
+}
+footer .title {
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-family: "AngryBirds";
+    padding-top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+form .form-button {
+    width: 1200px;
+    margin:0 auto;
+    text-align: left;
+    margin-top: 20px;
+}
+form .form-button button {
+    border: none;
+    background: #daf617;
+    border-radius: 6px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    color: #053c98;
+}
+form .form-button button:hover {
+    background:#ccc;
+    color: #fff;
+}
+
+footer .contacts {
+    width: 1200px;
+    margin-top: 40px;
+}
+footer .contacts .left {
+    width: 20%;
+    text-align: left;
+}
+footer .contacts .left strong{
+    font-size: 18px;
+}
+footer .contacts .right {
+    width: 80%;
+    text-align: left;
+}
+@media screen and (max-width: 1200px) {
+    footer form {
+        width: 90%;
+        text-align: center;
+    }
+    form .form-button {
+        width: 100%;
+        margin:0 auto;
+        text-align: left;
+        margin-top: 20px;
+    }
+    footer .title {
+        width: 100%;
+        text-align: center;
+    }
+    footer .contacts .right {
+        padding-left: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    footer .contacts {
+        width: 90%;
+        text-align: center;
+    }
+}
+.page-rights {
+    background: #d2cccc;
+}
+.rights {
+    background: #fff;
+    color: #000;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 150px;
+}
+.title {
+    font-size: 25px;
+}
+.rights-text {
+    color: grey;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.rights-link {
+    width: 60%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+    .rights {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+/* Adaptive 992 */
+@media screen and (max-width: 992px) {
+    .d-flex {
+        flex-direction: column;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .top-content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .top-content {
+        width: 100%;
+    }
+    header .top-content .left  {
+        width: 100%;
+        text-align: center;
+    }
+    header .top-content .left .logo  {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .top-content .right {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    header .top-slider {
+        width: 100%;
+        margin-top: 100px;
+        border: none;
+
+    }
+    header .top-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+    header .top-menu a {
+        font-size: 15px;
+        color: #393939;
+    }
+    header .top-slider .carousel-inner {
+        height: auto !important;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .produkt-options {
+        position: static;
+        height: 100px;
+        margin-top: 60px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .filter {
+        text-align: center;
+        width: 100%;
+    }
+    .sorting {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .dropbtn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    content .adres-content {
+        width: 100%;
+        text-align: center;
+    }
+    content .adres-content .title h1, content .adres-content .title h3 {
+        padding-left: 0;
+        text-align: center;
+    }
+    content .adres-content .title p, content .adres-content .title strong {
+        margin-left: 0px;
+        padding-top: 15px;
+        text-align: center;
+    }
+    content .adres-content .title table {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    content .adres-content .title .dropbtn {
+        color: #3498DB;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #daf617;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 80%;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    content .adres-content .title .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+    }
+    content .adres-content .title .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    content .adres-content .title .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    content .adres-content .title .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    content .adres-content .title .dropdown-content a:hover {background-color: #ddd}
+    content .adres-content .title .show {display:block;}
+    content .adres-content input, content .adres-content textarea {
+        margin-left: 0;
+    }
+    content .adres-content .title button {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    content .adres-content .top-links {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    content .produkts {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    content .produkts .produkt {
+        width: 200px;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    footer form {
+        width: 90%;
+        text-align: center;
+    }
+    footer .title {
+        text-align: center;
+        width: 100%;
+    }
+    form .form-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    footer .contacts {
+        width: 100%;
+        text-align: center;
+    }
+    footer .contacts .left {
+        width: 100%;
+        text-align: center;
+    }
+    footer .contacts .right {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+/* Adaptive 1200 */
